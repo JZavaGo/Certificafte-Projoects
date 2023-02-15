@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form, Cato or Doggo</h1>
+        <p id="description">This survey is to know if you prefer cats or dogs.</p>
+    
+
+<form action="" id="survey-form" method="post">
+    <fieldset>
+        <label id="name-label" for="name">Name: </label> <input placeholder="Enter your name" type="text" id="name" name="name" required>
+        <label for="ln" >Last Name: </label> <input placeholder="Enter your last name" type="text" id="ln" name="ln" required>
+        <label for="email" id="email-label">Email: <input placeholder="Enter your email" id="email" name="email" type="email" required /></label>
+        <label for="number" id="number-label">Age: <input placeholder="Enter your age" id="number" type="number" name="number" min="13" max="120" /></label>
+    </fieldset>
+
+    <fieldset>
+        <label for="options">Dogs or Cats? 
+            <select name="mascots" id="dropdown">
+                <option value="">Choose one you maniac</option>
+                <option value="1">Doge</option>
+                <option value="2">Cat(sadge)</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="1" /> Student </label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="2"/> Freelancer </label>
+    </fieldset>
+
+    <fieldset>
+        <label for="mascot-types">Types of pets for psychos
+            <label for="options2"><input type="checkbox" id="cb1" value="1"> Poodle </label>
+            <label for="options2"><input type="checkbox" id="cb2" value="2"> Sphynx Cat </label>
+            <label for="options2"><input type="checkbox" id="cb3" value="3"> Pitbulls </label>
+        </label>
+
+    </fieldset>
+
+    <fieldset>
+        <label for="comments">Comments?
+            <textarea name="comment" id="comment" cols="30" rows="3" placeholder="Add your comment here..."></textarea>
+        </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+</form>
+    
+</body>
+</html>
